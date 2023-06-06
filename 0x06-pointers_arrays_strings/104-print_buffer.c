@@ -1,3 +1,5 @@
+#include "holberton.h"
+#include <stdio.h>
 /**
  * print_buffer - prints string buffer
  * @b: the buffer
