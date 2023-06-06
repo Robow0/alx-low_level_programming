@@ -1,3 +1,6 @@
+
+#include "main.h"
+#include <stdio.h>
 /**
  * infinite_add - Adds two numbers
  * @n1: first input string
