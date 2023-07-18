@@ -2,7 +2,7 @@
 #include "main.h"
 
 /**
- * main - check the code for 7-print_last_digit.c.
+ * main - check the code 
  *
  * Return: Always 0.
  */
