@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	char h[] = "0-putchar.c";
+	char h[] = "_putchar";
 	int s = sizeof(h);
 	int i;
 
