@@ -1,13 +1,15 @@
 #include "main.h"
 /**
- * print_buffer - add 2 strings.
- * @b: string1.
- * @size: string2.
- * Return: String with all letters in ROT13 base.
+ * infinite_add - Add up two numbers stored in given char arrays
+ * @n1: The first number
+ * @n2: The second number
+ * @r: Pointer to the buffer to store result
+ * @size_r: The size of the buffer
+ *
+ * Return: 0 if buffer too small to store result, else return pointer to buffer
  */
-void print_buffer(char *b, int size)
+char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-
 	int l1, l2, tmpl, rl, i, sum, num1, num2, carry;
 	char tmp[10000];
 
@@ -62,5 +64,4 @@ void print_buffer(char *b, int size)
 		i++;
 	}
 	return (r);
-}
 }
