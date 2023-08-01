@@ -49,20 +49,5 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 	}
 	i = tmpl = 0;
 	while (i <= rl)
-	{
-		tmp[i] = r[rl - i];
-		tmpl++;
-		i++;
-	}
-	i = 0;
-	while (i < tmpl)
-	{
-		if (r[i] == '\0')
-		{
-			break;
-		}
-		r[i] = tmp[i];
-		i++;
-	}
 	return (r);
 }
