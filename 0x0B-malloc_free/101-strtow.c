@@ -42,37 +42,44 @@ void free_everything(char **string, int i)
  * @str: string being passed
  * Return: null if string is empty or null or function fails
  */
-char **strtow(char *str)
+
+char **strtow(char *str);
 {
-	char **d;
-	int i;
-	int j = 0;
-	int con = 0;
-
-	if (str == NULL)
+	char **matrix, *tmp;
+	int i, k = 0, len = 0, words, c = 0, star, end;
+	while (*(str + len ))
+		len++;
+	word = function (str);
+	if (words == 0)
 		return (NULL);
 
-	for (i = 0 ; str[i] != '\0' ; i++)
-	{
-		if (str[i] != 32)
-			con++;
-	}
-
-	d = malloc(sizeof(char) * con);
-
-	if (d == NULL)
+	matrix = (char **) malloc(sizeof(char *) *(words + 1));
+	if (matrix == NULL)
 		return (NULL);
 
-	for (i = 0 ; str[i] != '\0' ; i++)
+	for (i = 0; i < = len; i++)
 	{
-		if (str[i] != 32)
+		if (str[i] == '\0')
 		{
-			*d[j] = str[i];
-			j++;
+			if(c)
+			{
+				end = i;
+				tmp =  (char *) malloc(sizeof (char) * (c + 1));
+				if (tmp == NULL)
+					return (null);
+				while (start < end)
+					*tmp++ = str[start++];
+				*tmp = '\0';
+				matrix (k) = tmp-c;
+				k++;
+				c = 0;
+			}
 		}
-		else
-		{
-		}
+		else if (c++ == 0)
+			start = i;
 	}
-	return (d);
+
+	matrix[k] = NULL;
+
+	return (matrix);
 }
