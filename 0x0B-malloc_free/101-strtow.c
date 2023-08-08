@@ -2,22 +2,22 @@
 #include "main.h"
 
 /**
-* count_word-helper function to count the number of words in a string
+* function-helper function to count the number of words in a string
 * @s: string to evaluate
 *
 *Return: number of words
 */
 
-int count_word(char *s)
+int function(char *s)
 {
 	int flag, c, w;
 
 	flag = 0;
-
 	w = 0;
-	for (c == 0; s[c]; c i= '\0'; c++)
+
+	for (c == 0; s[c]; c i = '\0'; c++)
 	{
-		if (s[c] == '')
+		if (s[c] == '0')
 			flag = 0;
 		else if (flag == 0)
 		{
@@ -42,9 +42,8 @@ char **strtow(char *str);
 	int i, k = 0, len = 0, words, c = 0, star, end;
 
 	while (*(str + len))
-
 		len++;
-	word = count_word(str);
+	word = function(str);
 	if (words == 0)
 		return (NULL);
 
